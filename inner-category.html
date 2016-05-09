@@ -125,6 +125,17 @@
             .social-icons{
                 width: 45px;
             }
+
+            .arrow-down {
+                width: 0;
+                height: 0;
+                border-left: 40px solid transparent;
+                border-right: 40px solid transparent;
+                border-top: 40px solid #FFF;
+                position: relative;
+                left: 10%;
+            }
+
             .presentation{
                 font-weight: 300;
                 font-size: 35px;
@@ -169,55 +180,45 @@
                 -moz-box-shadow: 0px 5px 16px -1px rgba(0,0,0,0.75);
                 box-shadow: 0px 5px 16px -1px rgba(0,0,0,0.75);
             }
-            .pmenu li a:hover {
+            .pmenu li a:hover{
                 background: black;
                 color: white;
             }
-            .header-logo {
+            .header-logo{
                 padding: 2px;
             }
-            .compense-menu {
+            .compense-menu{
                 height: 40px;
             }
-            .category-container {
-                margin: 15px 0px;
-                opacity: 0.7;
+            .header-catalog a{
+                color: white;
+                padding-right: 10px;
             }
-            .category-container:hover {
-                opacity: 1;
+            .header-catalog a:hover{
+                opacity: 0.4;
             }
-            .category-description {
-                background-color: white;
-                color: #1F1D1D;
-                font-weight: 600;
-                font-size: 18px;
-                padding: 2px 10px;
-                -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,1);
-                -moz-box-shadow: 0px 4px 7px 2px rgba(0,0,0,1);
-                box-shadow: 0px 4px 7px 2px rgba(0,0,0,1);
-            }
-            .sidebar {
-                margin-top: 15px;
-            }
-            .sidebar ul li {
-                list-style: none;
-            }
-            .sidebar ul li a {
-                color: #fff;
+            .prod-header-nav:after{
+                content: ">";
                 padding-left: 10px;
             }
-            .side-nav li.divider {
-                margin: 16px 0px;
+            .padding-nav-catalog{
+                padding-top: 12px;
+                padding-bottom: 12px;
             }
-            .side-nav li.divider {
-                border-top: 1px solid;
-                height: 0;
-                list-style: none;
-                padding: 0;
-                border-top-color: #e6e6e6;
+            .button.hollow {
+                border: 1px solid white;
+                color: white;
             }
-            .side-nav li:hover, .side-nav li:focus {
-                background-color: #545454;
+            .button.hollow:hover {
+                background-color: white;
+                color: #1F1D1D;
+            }
+            .thumbnail {
+                border-radius: 0px;
+                border: 0px;
+            }
+            .product{
+                margin-top: 25px;
             }
         </style>
     </head>
@@ -225,17 +226,17 @@
         <header class="f-roboto pmenu">
             <div class="row">
                 <div class="large-4 columns">
-                    <div class="logo">
-                        <img src="Imagens/logo-mini.png" alt="Galpão do Laminado - Loja de Decorações em Guarulhos" title="Galpão do Laminado" class="header-logo"> 
+                    <a href="index.html" class="logo">
+                        <img src="Imagens/logo-mini.png" alt="Galpão do Laminado - Loja de Decorações em Guarulhos" title="Galpão do Laminado" class="header-logo">
                         <span class="f-bold">Galpão do Lâminado</span>
-                    </div>
+                    </a>
                 </div>
                 <div class="large-8 columns">
                     <div class="centered">
                         <ul class="menu">
                             <li><a href="index.html">Inicio</a></li>
                             <li><a href="">Sobre</a></li>
-                            <li><a href="catalogo.html">Catalogo</a></li>
+                            <li><a href="">Catalogo</a></li>
                             <li><a href="">Parceiros</a></li>
                             <li><a href="">Contato</a></li>
                         </ul>
@@ -243,75 +244,60 @@
                 </div>
             </div>
         </header>
-
         <div class="compense-menu"></div>
-
         <main class="container f-white">
-            <div class="row">
-                <div class="large-3 columns sidebar">
-                    <ul class="side-nav">
-                        <li><a href="inner-category.html">Link 1</a></li>
-                        <li><a href="inner-category.html">Link 2</a></li>
-                        <li class="divider"></li>
-                        <li><a href="inner-category.html">Link 3</a></li>
-                        <li><a href="inner-category.html">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="large-9 columns">
-                    <div class="row large-up-3 medium-up-2 small-up-1">
-                        <div class="columns category-container">
-                            <a href="inner-category.html">
-                                <img src="Imagens/categorias/size.jpg">
-                                <div class="category-description">Pisos</div>
-                            </a>
-                        </div>
-                        <div class="columns category-container">
-                            <a href="inner-category.html">
-                                <img src="Imagens/categorias/size.jpg">
-                                <div class="category-description">Azulejos</div>
-                            </a>
-                        </div>
-                        <div class="columns category-container">
-                            <a href="inner-category.html">
-                                <img src="Imagens/categorias/size.jpg">
-                                <div class="category-description">Persianas</div>
-                            </a>
-                        </div>
-                        <div class="columns category-container">
-                            <a href="inner-category.html">
-                                <img src="Imagens/categorias/size.jpg">
-                                <div class="category-description">Papeis de parede</div>
-                            </a>
-                        </div>
-                        <div class="columns category-container">
-                            <a href="inner-category.html">
-                                <img src="Imagens/categorias/size.jpg">
-                                <div class="category-description">Papeis de parede</div>
-                            </a>
-                        </div>
-                        <div class="columns category-container">
-                            <a href="inner-category.html">
-                                <img src="Imagens/categorias/size.jpg">
-                                <div class="category-description">Papeis de parede</div>
-                            </a>
-                        </div>
-                        <div class="columns category-container">
-                            <a href="inner-category.html">
-                                <img src="Imagens/categorias/size.jpg">
-                                <div class="category-description">Papeis de parede</div>
-                            </a>
-                        </div>
-                        <div class="columns category-container">
-                            <a href="inner-category.html">
-                                <img src="Imagens/categorias/size.jpg">
-                                <div class="category-description">Papeis de parede</div>
-                            </a>
-                        </div>
-                    </div>
+            <div class="row header-catalog">
+                <div class="column padding-nav-catalog">
+                    <a href="#" class="prod-header-nav">Produtos</a>
+                    <a href="#" class="prod-header-nav">Pisos</a>
                 </div>
             </div>
-            <div class="row">
-                
+            <div class="row small-up-2 medium-up-3 large-up-5">
+                <div class="column product">
+                    <img class="thumbnail" src="Imagens/produtos/p1.jpg">
+                    <h6>Piso Teste, Qualquer Coisa</h6>
+                    <a href="#" class="button small expanded hollow">Ver +</a>
+                </div>
+                <div class="column product">
+                    <img class="thumbnail" src="Imagens/produtos/p2.jpg">
+                    <h6>Piso Teste, Qualquer Coisa</h6>
+                    <a href="#" class="button small expanded hollow">Ver +</a>
+                </div>
+                <div class="column product">
+                    <img class="thumbnail" src="Imagens/produtos/p3.jpg">
+                    <h6>Piso Teste, Qualquer Coisa</h6>
+                    <a href="#" class="button small expanded hollow">Ver +</a>
+                </div>
+                <div class="column product">
+                    <img class="thumbnail" src="Imagens/produtos/p4.jpg">
+                    <h6>Piso Teste, Qualquer Coisa</h6>
+                    <a href="#" class="button small expanded hollow">Ver +</a>
+                </div>
+                <div class="column product">
+                    <img class="thumbnail" src="Imagens/produtos/p5.jpg">
+                    <h6>Piso Teste, Qualquer Coisa</h6>
+                    <a href="#" class="button small expanded hollow">Ver +</a>
+                </div>
+                <div class="column product">
+                    <img class="thumbnail" src="Imagens/produtos/p6.jpg">
+                    <h6>Piso Teste, Qualquer Coisa</h6>
+                    <a href="#" class="button small expanded hollow">Ver +</a>
+                </div>
+                <div class="column product">
+                    <img class="thumbnail" src="Imagens/produtos/p7.jpg">
+                    <h6>Piso Teste, Qualquer Coisa</h6>
+                    <a href="#" class="button small expanded hollow">Ver +</a>
+                </div>
+                <div class="column product">
+                    <img class="thumbnail" src="Imagens/produtos/p6.jpg">
+                    <h6>Piso Teste, Qualquer Coisa</h6>
+                    <a href="#" class="button small expanded hollow">Ver +</a>
+                </div>
+                <div class="column product">
+                    <img class="thumbnail" src="Imagens/produtos/p9.jpg">
+                    <h6>Piso Teste, Qualquer Coisa</h6>
+                    <a href="#" class="button small expanded hollow">Ver +</a>
+                </div>
             </div>
         </main>
 
